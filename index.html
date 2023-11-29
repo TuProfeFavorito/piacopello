@@ -59,6 +59,9 @@
                                         <mark>2</mark>
                                     </a>
                                 </li>
+                                <li style="display: none;" class="mobileIcon">
+                                    <i></i>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -66,6 +69,19 @@
             </div>
         </div>
     </header>
+    <div class="menuFixedsMobile" style="display: none;">
+        <div class="closeMenuMobile"></div>
+        <div class="menuMobile">
+            <ul>
+                <li><a href="#">Belleza</a></li>
+                <li><a href="#">Hogar</a></li>
+                <li><a href="#">Decoración</a></li>
+                <li><a href="#">Fit</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tienda</a></li>
+            </ul>
+        </div>
+    </div>
     <div class="preload">
         <div class="preloadanimation"></div>
         <svg xmlns="http://www.w3.org/2000/svg" width="88" height="74" viewBox="0 0 88 74" fill="none">
@@ -138,6 +154,27 @@
     setTimeout(function(){
         $(".banner__title").addClass("active");
     }, 3500);
+
+    $(".mobileIcon").on("click", function(){
+        $(".menuFixedsMobile").addClass("active");
+    });
+    $(".closeMenuMobile").on("click", function(){
+        $(".menuFixedsMobile").removeClass("active");
+    });
+
+
+    function scrollAnimated(){
+		var lastScrollTop = 0, delta = 20;
+		$(window).on('scroll',function(){
+			var nowScrollTop = $(this).scrollTop();
+			if (nowScrollTop > 50){
+				$('header').addClass('animated');
+			} else {
+				$('header').removeClass('animated');
+			}
+		});
+	}
+	scrollAnimated();
 
 </script>
 
