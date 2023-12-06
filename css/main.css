@@ -387,3 +387,328 @@ header {
     background: #1D1D1B;
     opacity: 0.4;
 }
+
+.checkout {
+    position: relative;
+    margin-top: 150px;
+}
+.checkout .title h1 {
+    font-family: 'Poppins';
+    font-size: 50px;
+}
+.checkout .title:before {
+    content: '';
+    width: calc(50vw - 600px - 25px);
+    background: black;
+    height: 2px;
+    position: absolute;
+    left: 0px;
+    top: 95px;
+}
+.woocommerce-breadcrumb {
+    margin: 0 0 1em;
+    padding: 0;
+    font-size: .92em;
+    color: #767676;
+    border-bottom: solid 1px #cfcfcf;
+    color: #8E8E8E !important;
+    padding-bottom: 10px !important;
+    margin-bottom: 30px !important;
+}
+.woocommerce-breadcrumb a {
+    color: black !important;
+}
+.woocommerce-breadcrumb i {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-bottom: solid 1px #B89157;
+    border-right: solid 1px #B89157;
+    transform: rotate(-45deg);
+    position: relative;
+    top: -1px;
+    margin: 0px 6px;
+}
+
+.cartItem {
+    display: flex;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 4px 40px 0px rgba(0,0,0,0.07);
+    margin-bottom: 15px;
+    align-items: center;
+}
+.cartItem .carItem__imagen img {
+    width: 165px;
+    height: 135px;
+    object-fit: cover;
+    display: block;
+}
+.cartItem .carItem__content {
+    position: relative;
+    width: calc(100% - 135px);
+    box-sizing: border-box;
+    padding: 13px;
+    padding-left: 26px;
+}
+.cartItem .carItem__content .delete {
+    position: absolute;
+    right: 0px;
+    width: 41px;
+    height: 37px;
+    background: black;
+    border-bottom-left-radius: 22px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cartItem .carItem__content .delete svg {
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: -2px;
+}
+
+.cartItem .carItem__content .content h3 {
+    font-family: 'Poppins';
+    font-size: 16px;
+}
+.cartItem .carItem__content .content p {
+    color: #6F6F6F;
+    font-size: 12px;
+}
+.cartItem .carItem__content .content .price {
+    font-size: 14px;
+    font-weight: 700;
+}
+.cartItem .carItem__content .content .spinner {
+    max-width: 120px;
+    margin-top: 10px;
+}
+.cartItem .carItem__content .content .spinner {
+    display: flex;
+    align-items: center;
+    border: solid 1px black;
+    border-radius: 15px;
+    padding: 4px 8px;
+    background: white;
+}
+.cartItem .carItem__content .content .spinner div {
+    cursor: pointer;
+    width: 20px;
+    text-align: center;
+}
+.cartItem .carItem__content .content .spinner div.quantity {
+    float: none !important;
+    margin: 0px !important;
+    width: 80px;
+}
+.cartItem .carItem__content .content .spinner input {
+    text-align: center !important;
+    width: 80px !important;
+    border: none;
+    padding: 0px;
+}
+.checkoutflex {
+    display: flex;
+    justify-content: space-between;    
+    align-items: flex-start;
+}
+.checkoutflex__right {
+    width: 450px;
+    flex: none;
+}
+.checkoutflex__left {
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.05);
+    padding: 35px;
+    box-sizing: border-box;
+    width: calc(100% - 470px);
+}
+.checkoutflex__right h2 {
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    margin-bottom: 5px;
+}
+.checkoutflex__right .checkoutproductos{
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.05);
+    padding: 35px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.checkoutflex__right .checkoutresumen{
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.05);
+    padding: 35px;
+    box-sizing: border-box;
+}
+
+.tableresumenitem .data {
+    font-weight: 700;
+}
+.tableresumenitem:last-child {
+    border: none;
+}
+.tableresumenitem {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.10);
+    padding: 10px 0px;
+}
+
+.mybrandcrouns ul li.active {
+    background: black;
+    color: white;
+    font-weight: 700;
+}
+.mybrandcrouns ul:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: black;
+    bottom: 25px;
+    z-index: -1;
+}
+.mybrandcrouns ul li {
+    border: solid 1px black;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 20px;
+    box-shadow: 0px 0px 0px 10px white;
+    background: white;
+    font-weight: 700;
+}
+.mybrandcrouns ul {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.datos h2:before {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 2px;
+    background: black;
+    bottom: 25px;
+    left: 0px;
+}
+.datos h2 {
+    padding-left: 40px;
+    font-size: 35px;
+    font-family: 'Poppins';
+    position: relative;
+}
+.datos {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+}
+label.typeCheckbox p {
+    font-size: 14px;
+}
+label.typeCheckbox input {
+    margin-right: 5px;
+}
+label.typeCheckbox {
+    display: flex;
+    align-items: center;
+}
+.formrow {
+    margin-bottom: 15px;
+}
+.formrow input::placeholder {
+    font-size: 16px;
+    color: black;
+}
+.formrow input {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 50px;
+    border: 1px solid #000;
+    font-size: 16px;
+    padding: 6px 15px;
+}
+.formrow.s2lines input {
+    width: calc(50% - 5px);
+}
+.formrow.s2lines {
+    display: flex;
+    justify-content: space-between;
+}
+.littetitle h3 {
+    font-family: 'Poppins';
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.checkboxeds label {
+    margin-right: 10px;
+}
+.checkboxeds {
+    display: flex;
+    width: 220px;
+}
+.flexxforms {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inputssays input {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 50px;
+    border: 1px solid #000;
+    font-size: 14px;
+    padding: 6px 15px;
+}
+.inputssays {
+    width: calc(100% - 230px);
+}
+.simplforms {
+    margin-top: 20px;
+}
+
+.simplebutton {
+    margin-top: 30px;
+}
+.simplebutton .btn {
+    width: 100%;
+    color: white;
+    background: black;
+    font-size: 16px;
+}
+.message__content {
+    border-radius: 20px;
+    border: 1px solid #E2C9D4;
+    background: #F2E7EC;
+    display: flex;
+    align-items: center;
+    color: #745C67;
+    font-size: 12px;
+    padding: 4px 10px;
+    box-sizing: border-box;
+    margin: 10px 0px;
+}
+.message__content img {
+    width: 20px;
+    margin-right: 5px;
+}
